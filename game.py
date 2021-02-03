@@ -10,7 +10,7 @@ screenWidth=850
 screenHeight=500
 enemyTime=0
 window=pygame.display.set_mode((screenWidth,screenHeight))
-pygame.display.set_caption("character_animation")
+pygame.display.set_caption("Goblin Game")
 acceleration=5
 bg=pygame.image.load(os.path.join(os.path.dirname(__file__),'pics/bg.jpg'))
 how_to_play_images = []
