@@ -6,6 +6,7 @@
 3. [About the Code](#about-the-code) 
     - [Music and Sound effects](#music-and-sound-effects)
     - [Walking effect of player](#walking-effect-of-the-player)
+    - [Making the player jump](#making-the-player-jump)
 4. [References](#references)
 
 <br><br><br><br>
@@ -37,9 +38,28 @@ loops - number of times the music should repeat. It's default value is 0.To play
 start - denotes the position in time, the music starts playing from. Which is 0.0 by default.<br>
 fade_ms - makes the music start playing at 0 volume and fade up to full volume over the given time.<br>
 All these are optional arguments.
-<br><br><br><br>
+<br><br><br>
 #### Walking effect of the player
-When the player is moving the player appears to be walking. This can be done using 10-15 images of the character, each of which is slightly different than the previous image.These images which are used in this project can be found here. Then all we need to do is whenever the player is moved we display the slightly different image at a position  little ahead of the previous position. In order to keep track of all these images we can make use a List image_list and then just display the image_list[i].Now if we have to change the image all we need do is change the index i to (i+1)%(number_of_images).   
+When the player is moving the player appears to be walking. This can be done using 10-15 images of the character, each of which is slightly different than the previous image.These images which are used in this project can be found [here](pics). Then all we need to do is whenever the player is moved we display the slightly different image at a position  little ahead of the previous position. In order to keep track of all these images we can make use a List image_list and then just display the image_list[i].Now if we have to change the image all we need do is change the index i to (i+1)%(number_of_images).   
+<br><br><br>
+#### Making the player jump
+When the up arrow key is pressed the player can jump.To give this effect we have see 2 things.<br>
+First is that game contains a game loop which runs infinitely.To keep the framerate less than a specific value we can use - <br>
+```pygame.time.Clock().tick(desired_frame_rate)``` - Now the program will never run faster than the desired framerates.<br>
+So now we can assume that the program runs for the desired framerates(fr) per second.This means that interval between any two frames is 1/(fr).This will be our unit time.<br><br>
+Now to make the player jump we will use concepts of physics.<br>
+- When the player has to jump.Then he/she should have an upward velocity.
+- After each unit time the vertical displacement of the player has to change by this vertical velocity.
+- After each unit time this vertical velocity has to change by some vertical acceleration.
+Now to simulate this we make three variables,<br>
+- player vertical displacement(height above the ground while jumping)  -   p_dis
+- player vertical velocity     -   p_vel
+- player vertical acceleration(gravity)    -   p_acc
+Now initially we have to set ```p_dis = 0``` and ```p_acc = x``` where x is positive number which gives the best jumping effect.(acceleration is downwards and in pygame Y coordinate increases in teh downward direction, so acceleration should be positive).<br>
+When we press the up arrow key, we set the ```p_vel = y``` where y is negative number which gives the best jumping effect.(velocity is upward and in pygame Y coordinate decreases in the upward direction, so velocity should be negative).<br>
+Now all we have to do this in every frame change these values accordingly.<br>
+```p_dis = p_dis+p_vel```<br>
+```p_vel = p_vel+p_acc```
 <br><br><br><br>
 ### <center>References</center><br><br>
 Here are some references for learning more about this project.<br>
