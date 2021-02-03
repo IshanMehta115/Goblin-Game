@@ -2,9 +2,9 @@
 
 ## Table of Contents
 1. [Game description](#game-description)
-2. [Display pictures](display-pictures)
+2. [Display pictures](#display-pictures)
 3. [About the Code](#about-the-code) 
-    - [Music and Sound effects](#sound-effects)
+    - [Music and Sound effects](#music-and-sound-effects)
     - [Walking effect of player](#walking-effect-of-the-player)
 4. [References](#references)
 
@@ -18,7 +18,7 @@ This is a single player game.The goal of the game is simple - survive.In order t
 
 ### <center>About the Code</center><br><br>
 
-#### Sound effects
+#### Music and Sound effects
 This game uses a lot of sound effects.There is a music in the background and sounds for bullet shooting,bullet hitting,jumping and bomb explosion.
 <br>
 First of all you should have a music file (format - mp3,wav,ogg).For the background music you should have a longer file and for the sound effects you should have a shorter music file.
