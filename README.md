@@ -7,7 +7,8 @@
     - [Music and Sound effects](#music-and-sound-effects)
     - [Walking effect of player](#walking-effect-of-the-player)
     - [Making the player jump](#making-the-player-jump)
-4. [References](#references)
+4. [How to play](#how-to-play)
+5. [References](#references)
 
 <br><br><br><br>
 ### <center>Game Description</center><br><br>
@@ -16,6 +17,7 @@ This is a single player game.The goal of the game is simple - survive.In order t
 ### <center>Display Pictures</center><br><br>
 ![Main menu](readme_pics/ss1.PNG)
 ![GamePlay](readme_pics/ss2.PNG)<br>
+![How to play](pics/)
 
 ### <center>About the Code</center><br><br>
 
@@ -61,6 +63,18 @@ Now all we have to do this in every frame change these values accordingly.<br>
 ```p_dis = p_dis+p_vel```<br>
 ```p_vel = p_vel+p_acc```
 <br><br><br><br>
+### <center>How to play</center><br><br>
+<p align="center">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_1.jpg" alt="how to play 1" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_2.jpg" alt="how to play 2" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_3.jpg" alt="how to play 3" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_4.jpg" alt="how to play 4" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_5.jpg" alt="how to play 5" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_6.jpg" alt="how to play 6" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_7.jpg" alt="how to play 7" width="300px">
+    <img src="https://github.com/IshanMehta115/Goblin-Game/blob/main/pics/how_to_play_8.jpg" alt="how to play 8" width="300px">
+</p>
+ 
 ### <center>References</center><br><br>
 Here are some references for learning more about this project.<br>
 For pygame functions and examples
