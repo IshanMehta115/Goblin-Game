@@ -17,7 +17,6 @@ This is a single player game.The goal of the game is simple - survive.In order t
 ### <center>Display Pictures</center><br><br>
 ![Main menu](readme_pics/ss1.PNG)
 ![GamePlay](readme_pics/ss2.PNG)<br>
-![How to play](pics/)
 
 ### <center>About the Code</center><br><br>
 
